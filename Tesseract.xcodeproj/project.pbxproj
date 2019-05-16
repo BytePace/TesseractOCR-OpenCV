@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E0875452201AE150097484E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E0875442201AE150097484E /* GoogleService-Info.plist */; };
+		7E32BC2521F5B34C001C23BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E32BC2421F5B34C001C23BB /* ViewController.swift */; };
+		7E32BC2921F5B474001C23BB /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7E32BC2821F5B474001C23BB /* tessdata */; };
+		7E5CF40221F5B1AE0070C0F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CF40121F5B1AE0070C0F0 /* AppDelegate.swift */; };
+		7E5CF40721F5B1AE0070C0F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF40521F5B1AE0070C0F0 /* Main.storyboard */; };
+		7E5CF40921F5B1AF0070C0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF40821F5B1AF0070C0F0 /* Assets.xcassets */; };
+		7E5CF40C21F5B1AF0070C0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF40A21F5B1AF0070C0F0 /* LaunchScreen.storyboard */; };
+		7EAA3B1322533A27007939B1 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA3B1222533A27007939B1 /* UIAlertControllerExtension.swift */; };
+		7EAA3B1522533C16007939B1 /* Recognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA3B1422533C16007939B1 /* Recognizer.swift */; };
+		7EF6F28621FB3A6B007B1A93 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF6F28521FB3A6B007B1A93 /* opencv2.framework */; };
+		7EF6F28A21FB3A83007B1A93 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EF6F28921FB3A83007B1A93 /* OpenCVWrapper.mm */; };
+		7EFCC28C21FB032300AF0DFA /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCC28B21FB032300AF0DFA /* UIImageExtension.swift */; };
+		7EFCC28E21FB055500AF0DFA /* ImageSlicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCC28D21FB055500AF0DFA /* ImageSlicer.swift */; };
+		7EFCC29021FB057200AF0DFA /* TesseractRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCC28F21FB057200AF0DFA /* TesseractRecognizer.swift */; };
+		8C0266F3F570DA4393DDC1BF /* Pods_Tesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666BDC69426FE61ADBC1D0DD /* Pods_Tesseract.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		533DEF5AA97EECC89A1354CB /* Pods-Tesseract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesseract.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tesseract/Pods-Tesseract.release.xcconfig"; sourceTree = "<group>"; };
+		666BDC69426FE61ADBC1D0DD /* Pods_Tesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0875442201AE150097484E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E32BC2421F5B34C001C23BB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E32BC2821F5B474001C23BB /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		7E5CF3FE21F5B1AE0070C0F0 /* Tesseract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesseract.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5CF40121F5B1AE0070C0F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E5CF40621F5B1AE0070C0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E5CF40821F5B1AF0070C0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E5CF40B21F5B1AF0070C0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E5CF40D21F5B1AF0070C0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA3B1222533A27007939B1 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		7EAA3B1422533C16007939B1 /* Recognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recognizer.swift; sourceTree = "<group>"; };
+		7EF6F28521FB3A6B007B1A93 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		7EF6F28721FB3A83007B1A93 /* Tesseract-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tesseract-Bridging-Header.h"; sourceTree = "<group>"; };
+		7EF6F28821FB3A83007B1A93 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		7EF6F28921FB3A83007B1A93 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		7EF6F28B21FB3AE5007B1A93 /* OpenCVPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVPrefixHeader.pch; sourceTree = "<group>"; };
+		7EFCC28B21FB032300AF0DFA /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7EFCC28D21FB055500AF0DFA /* ImageSlicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlicer.swift; sourceTree = "<group>"; };
+		7EFCC28F21FB057200AF0DFA /* TesseractRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractRecognizer.swift; sourceTree = "<group>"; };
+		EE84423385515BC764059560 /* Pods-Tesseract.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesseract.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tesseract/Pods-Tesseract.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E5CF3FB21F5B1AE0070C0F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF6F28621FB3A6B007B1A93 /* opencv2.framework in Frameworks */,
+				8C0266F3F570DA4393DDC1BF /* Pods_Tesseract.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E5653D2225C613300A1ACC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EFCC28B21FB032300AF0DFA /* UIImageExtension.swift */,
+				7EAA3B1222533A27007939B1 /* UIAlertControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7E5653D5225C63C400A1ACC6 /* Recognizers */ = {
+			isa = PBXGroup;
+			children = (
+				7EFCC28D21FB055500AF0DFA /* ImageSlicer.swift */,
+				7EFCC28F21FB057200AF0DFA /* TesseractRecognizer.swift */,
+				7EAA3B1422533C16007939B1 /* Recognizer.swift */,
+			);
+			path = Recognizers;
+			sourceTree = "<group>";
+		};
+		7E5CF3F521F5B1AE0070C0F0 = {
+			isa = PBXGroup;
+			children = (
+				7E5CF40021F5B1AE0070C0F0 /* Tesseract */,
+				7E5CF3FF21F5B1AE0070C0F0 /* Products */,
+				E93E963BE6487AA5B170CE4D /* Pods */,
+				CC24220F6602905E1F0CADDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E5CF3FF21F5B1AE0070C0F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E5CF3FE21F5B1AE0070C0F0 /* Tesseract.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E5CF40021F5B1AE0070C0F0 /* Tesseract */ = {
+			isa = PBXGroup;
+			children = (
+				7E5653D5225C63C400A1ACC6 /* Recognizers */,
+				7EF6F28421FB3A5A007B1A93 /* OpenCV */,
+				7E32BC2821F5B474001C23BB /* tessdata */,
+				7E5653D2225C613300A1ACC6 /* Extensions */,
+				7E5CF40121F5B1AE0070C0F0 /* AppDelegate.swift */,
+				7E32BC2421F5B34C001C23BB /* ViewController.swift */,
+				7E5CF40521F5B1AE0070C0F0 /* Main.storyboard */,
+				7E5CF40821F5B1AF0070C0F0 /* Assets.xcassets */,
+				7E5CF40A21F5B1AF0070C0F0 /* LaunchScreen.storyboard */,
+				7E5CF40D21F5B1AF0070C0F0 /* Info.plist */,
+				7E0875442201AE150097484E /* GoogleService-Info.plist */,
+			);
+			path = Tesseract;
+			sourceTree = "<group>";
+		};
+		7EF6F28421FB3A5A007B1A93 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				7EF6F28521FB3A6B007B1A93 /* opencv2.framework */,
+				7EF6F28821FB3A83007B1A93 /* OpenCVWrapper.h */,
+				7EF6F28921FB3A83007B1A93 /* OpenCVWrapper.mm */,
+				7EF6F28721FB3A83007B1A93 /* Tesseract-Bridging-Header.h */,
+				7EF6F28B21FB3AE5007B1A93 /* OpenCVPrefixHeader.pch */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		CC24220F6602905E1F0CADDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				666BDC69426FE61ADBC1D0DD /* Pods_Tesseract.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E93E963BE6487AA5B170CE4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE84423385515BC764059560 /* Pods-Tesseract.debug.xcconfig */,
+				533DEF5AA97EECC89A1354CB /* Pods-Tesseract.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E5CF3FD21F5B1AE0070C0F0 /* Tesseract */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5CF41021F5B1AF0070C0F0 /* Build configuration list for PBXNativeTarget "Tesseract" */;
+			buildPhases = (
+				8C50299834F69A0923C16C4C /* [CP] Check Pods Manifest.lock */,
+				7E5CF3FA21F5B1AE0070C0F0 /* Sources */,
+				7E5CF3FB21F5B1AE0070C0F0 /* Frameworks */,
+				7E5CF3FC21F5B1AE0070C0F0 /* Resources */,
+				EDE38FA6248C05F3A83F9C50 /* [CP] Embed Pods Frameworks */,
+				484E5840A3471F882DC4F713 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tesseract;
+			productName = Tesseract;
+			productReference = 7E5CF3FE21F5B1AE0070C0F0 /* Tesseract.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E5CF3F621F5B1AE0070C0F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					7E5CF3FD21F5B1AE0070C0F0 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 7E5CF3F921F5B1AE0070C0F0 /* Build configuration list for PBXProject "Tesseract" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E5CF3F521F5B1AE0070C0F0;
+			productRefGroup = 7E5CF3FF21F5B1AE0070C0F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E5CF3FD21F5B1AE0070C0F0 /* Tesseract */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E5CF3FC21F5B1AE0070C0F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5CF40C21F5B1AF0070C0F0 /* LaunchScreen.storyboard in Resources */,
+				7E32BC2921F5B474001C23BB /* tessdata in Resources */,
+				7E0875452201AE150097484E /* GoogleService-Info.plist in Resources */,
+				7E5CF40921F5B1AF0070C0F0 /* Assets.xcassets in Resources */,
+				7E5CF40721F5B1AE0070C0F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		484E5840A3471F882DC4F713 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tesseract/Pods-Tesseract-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tesseract/Pods-Tesseract-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C50299834F69A0923C16C4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tesseract-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE38FA6248C05F3A83F9C50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tesseract/Pods-Tesseract-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRSDKiOS/TesseractOCRSDKiOS.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCRSDKiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tesseract/Pods-Tesseract-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E5CF3FA21F5B1AE0070C0F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E32BC2521F5B34C001C23BB /* ViewController.swift in Sources */,
+				7EFCC28E21FB055500AF0DFA /* ImageSlicer.swift in Sources */,
+				7EF6F28A21FB3A83007B1A93 /* OpenCVWrapper.mm in Sources */,
+				7EAA3B1522533C16007939B1 /* Recognizer.swift in Sources */,
+				7E5CF40221F5B1AE0070C0F0 /* AppDelegate.swift in Sources */,
+				7EFCC29021FB057200AF0DFA /* TesseractRecognizer.swift in Sources */,
+				7EAA3B1322533A27007939B1 /* UIAlertControllerExtension.swift in Sources */,
+				7EFCC28C21FB032300AF0DFA /* UIImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E5CF40521F5B1AE0070C0F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5CF40621F5B1AE0070C0F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E5CF40A21F5B1AF0070C0F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5CF40B21F5B1AF0070C0F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E5CF40E21F5B1AF0070C0F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E5CF40F21F5B1AF0070C0F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E5CF41121F5B1AF0070C0F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE84423385515BC764059560 /* Pods-Tesseract.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DDH29H2PE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tesseract/OpenCV",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Tesseract/OpenCV/OpenCVPrefixHeader.pch";
+				INFOPLIST_FILE = Tesseract/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.bytepace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tesseract/OpenCV/Tesseract-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7E5CF41221F5B1AF0070C0F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533DEF5AA97EECC89A1354CB /* Pods-Tesseract.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DDH29H2PE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tesseract/OpenCV",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Tesseract/OpenCV/OpenCVPrefixHeader.pch";
+				INFOPLIST_FILE = Tesseract/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.bytepace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tesseract/OpenCV/Tesseract-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E5CF3F921F5B1AE0070C0F0 /* Build configuration list for PBXProject "Tesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5CF40E21F5B1AF0070C0F0 /* Debug */,
+				7E5CF40F21F5B1AF0070C0F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5CF41021F5B1AF0070C0F0 /* Build configuration list for PBXNativeTarget "Tesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5CF41121F5B1AF0070C0F0 /* Debug */,
+				7E5CF41221F5B1AF0070C0F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E5CF3F621F5B1AE0070C0F0 /* Project object */;
+}

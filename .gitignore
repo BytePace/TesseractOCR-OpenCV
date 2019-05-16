@@ -1,0 +1,6 @@
+Pods
+Tesseract.xcworkspace/xcshareddata
+Tesseract.xcworkspace/xcuserdata/velichkinnikita.xcuserdatad
+Tesseract/OpenCV/opencv2.framework
+Tesseract/tessdata
+GoogleService-Info.plist
